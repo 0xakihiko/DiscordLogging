@@ -174,7 +174,7 @@ def get_config():
 		os_config_path = os.path.join(os.environ['HOME'], '.config')
 	else:
 		raise FileNotFoundError("Could not find config")
-	os_config_path = os.path.join(os_config_path, 'discordlogging.ini')
+	os_config_path = os.path.join(os_config_path, '/discord/discordlogging.ini')
 	config.read(os_config_path)
 
 	return config
